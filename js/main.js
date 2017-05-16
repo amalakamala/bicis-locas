@@ -7,11 +7,11 @@ function validateForm(){
 	var selector = document.getElementById("select").value;
 	var twitter = document.getElementById("input-social").value;
 
-	var nombreV = document.getElementById("el-nombre");
-	var apellidoV = document.getElementById("el-apellido");
-	var emailV = document.getElementById("el-email");
-	var passwordV = document.getElementById("el-password");
-	var selectV = document.getElementById("el-select");
+	var nombreV = document.getElementsByClassName("input-box")[0];
+	var apellidoV = document.getElementsByClassName("input-box")[1];
+	var emailV = document.getElementsByClassName("input-box")[2];
+	var passwordV = document.getElementsByClassName("input-box")[3];
+	var selectV = document.getElementsByClassName("input-box")[4];
 
 
 	if(!(/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]{2,11})+$/.test(nombre))){
